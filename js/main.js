@@ -19,6 +19,9 @@ const workDescription = document.getElementById("work-description");
 const workAudio = document.getElementById("work-audio");
 
 // Contador de monedas
+
+console.log("Museo interactivo iniciado");
+
 const coinCounter = document.getElementById("coin-counter");
 
 let coins = 0;
@@ -93,3 +96,6 @@ backButton.addEventListener("click", () => {
 
     window.scrollTo(0, 0);
 });
+coinCounter.textContent = coins;
+
+initializeMap();
